@@ -14,10 +14,10 @@ while true; do
     fi     
 
     if [ "${stock3070}" == "Coming soon" ]; then                                                                                                                                                                                
-        echo -e "[ \033[33mINFO\033[0m ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}" >> ~/checkstock/log.txt                                                                                                   
+        echo -e "[ INFO ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}" >> ~/checkstock/log.txt                                                                                                   
         echo -e "[ \033[33mINFO\033[0m ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}"                                                                                                                   
     else                                                                                                                                                                                                                        
-        echo -e "[ \033[31mALERT\033[0m ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}" >> ~/checkstock/log.txt                                                                                                  
+        echo -e "[ ALERT ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}" >> ~/checkstock/log.txt                                                                                                  
         echo -e "[ \033[31mALERT\033[0m ] - $(date '+%F [%T]') - GTX3070 - BestBuy - ${stock3070}"                                                                                                                          
         printf "\a"                                                                                                                                                                                                 
     fi                                                                                                                                                                                                          
