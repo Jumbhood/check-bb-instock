@@ -9,8 +9,8 @@ app.config['DEBUG'] = True
 @app.route('/', methods=['GET'])
 def home():
     result = []
-    url = {'1060': 'https://www.bestbuy.ca/en-ca/product/nvidia-geforce-rtx-3060-ti-8gb-gddr6-video-card/15166285', '1070': 'https://www.bestbuy.ca/en-ca/product/nvidia-geforce-rtx-3070-8gb-gddr6-video-card-only-at-best-buy/15078017'}
-    cards = ['1060', '1070']
+    url = {'3060': 'https://www.bestbuy.ca/en-ca/product/nvidia-geforce-rtx-3060-ti-8gb-gddr6-video-card/15166285', '3070': 'https://www.bestbuy.ca/en-ca/product/nvidia-geforce-rtx-3070-8gb-gddr6-video-card-only-at-best-buy/15078017'}
+    cards = ['3060', '3070']
     for card in cards:
         item = {}
         status = scrape(url[card])
